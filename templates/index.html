@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="per" dir="rtl">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Qr Code</title>
+    
+</head>
+<body>
+    <div class="title">
+    <h1>دروستکردنی qr code 🔥</h1>
+    <h3>لە خوارەوە بەستەرێک دابنێ بۆ دروستکردنی QR Code 👇</h3>
+    </div>
+    <form action="/" method="POST">
+        <input type="text" name="link" />
+        <button type="submit">دروستکردنی  QR</button>
+    </form>
+    {% if data %}
+    <div class="generated">
+        <img src="{{data}}" alt="">
+        <p>لێرەدا ئەو QR کۆدەیە کە بۆمان دروستکردوویت 🚀</p>
+    </div>
+    {% endif %}
+</body>
+</html>
+
+
+<style>
+
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Montserrat&family=Roboto:wght@100&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body {
+        margin: 0rem 10rem;
+        font-family: 'IBM Plex Sans Arabic', cursive;
+    }
+    .title{
+      padding: 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      color: rgb(37, 37, 37);  
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    form input {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        width: 50%;
+        background: rgb(37, 37, 37);
+        color: white;
+        border: none;
+        border-radius: .5rem;
+    }
+    form button {
+        font-size: 1rem;
+        background: #9932cc;
+        border: none;
+        color: white;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        
+    }
+
+    .generated {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+</style>
